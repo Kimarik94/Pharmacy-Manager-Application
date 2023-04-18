@@ -4,6 +4,9 @@ Just run this SQL in your db-app or change a little bit for init the db with tab
 It will be necessary for correct data visualization inside the app.
 Please note that pool of connections i used was on local machine.
 db.url = jdbc:postgresql://localhost:5432/pharmacydb
+db.user = "your login"
+db.password = "your password"
+P.S. My own data,which i used during creation the app, i prefer not to show.
 
 After running the app, firstly You will see the autentification form. There are two roles (admin/pharmacist).
 Of course with different realization the functionality.

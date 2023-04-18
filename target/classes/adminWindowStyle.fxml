@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="611.0" prefWidth="981.0" 
+            xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" 
+            fx:controller="ru.imp.platov.javafx.controllersForWindows.AdminWindowController">
+    <BorderPane prefHeight="613.0" prefWidth="981.0">
+        <top>
+            <TabPane prefHeight="613.0" prefWidth="1027.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+                <tabs>
+                    <Tab text="Users">
+                        <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="584.0" prefWidth="976.0">
+                                <children>
+                                    <TableView fx:id="usersTable" prefHeight="582.0" prefWidth="854.0">
+                                        <columns>
+                                            <TableColumn fx:id="user_id" prefWidth="88.0" style="-fx-alignment: CENTER;" text="ID" />
+                                            <TableColumn fx:id="user_name" prefWidth="138.0" style="-fx-alignment: CENTER;" text="Name" />
+                                            <TableColumn fx:id="user_surname" prefWidth="177.0" style="-fx-alignment: CENTER;" text="Surname" />
+                                            <TableColumn fx:id="user_login" prefWidth="117.0" style="-fx-alignment: CENTER;" text="Login" />
+                                            <TableColumn fx:id="user_password" prefWidth="160.0" style="-fx-alignment: CENTER;" text="Password" />
+                                            <TableColumn fx:id="user_role" prefWidth="71.0" style="-fx-alignment: CENTER;" text="Role" />
+                                        </columns>
+                                    </TableView>
+                                    <Button fx:id="addUserButton" layoutX="875.0" layoutY="12.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="91.0" text="Add User" />
+                                    <Button fx:id="updateUserButton" layoutX="876.0" layoutY="70.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="91.0" text="Update User" />
+                                    <Button fx:id="deleteUserButton" layoutX="875.0" layoutY="129.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="92.0" text="Delete User" />
+                                    <Button fx:id="exitUserButton" layoutX="879.0" layoutY="539.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="85.0" text="Exit" />
+                                </children>
+                            </AnchorPane>
+                        </content>
+                    </Tab>
+                    <Tab text="Drugs">
+                        <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="584.0" prefWidth="974.0">
+                                <children>
+                                    <TableView fx:id="drugsTable" layoutY="-1.0" prefHeight="583.0" prefWidth="859.0">
+                                        <columns>
+                                            <TableColumn fx:id="drug_id" prefWidth="41.0" style="-fx-alignment: CENTER;" text="ID" />
+                                            <TableColumn fx:id="drug_name" prefWidth="116.0" style="-fx-alignment: CENTER;" text="Drug Name" />
+                                            <TableColumn fx:id="drug_manufacturer" prefWidth="121.0" style="-fx-alignment: CENTER;" text="Manufacturer" />
+                                            <TableColumn fx:id="drug_prod_date" style="-fx-alignment: CENTER;" text="Produced" />
+                                            <TableColumn fx:id="drug_expr_date" prefWidth="77.0" style="-fx-alignment: CENTER;" text="Expired" />
+                                            <TableColumn fx:id="drug_description" prefWidth="192.0" text="Description" />
+                                            <TableColumn fx:id="drug_quantity" prefWidth="78.0" style="-fx-alignment: CENTER;" text="Quantity" />
+                                            <TableColumn fx:id="drug_price" prefWidth="77.0" style="-fx-alignment: CENTER;" text="Price" />
+                                            <TableColumn fx:id="drug_recipe" prefWidth="68.0" style="-fx-alignment: CENTER;" text="Recipe" />
+                                        </columns>
+                                    </TableView>
+                                    <Button fx:id="addDrugButton" layoutX="868.0" layoutY="14.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="100.0" text="Add Drug" />
+                                    <Button fx:id="updateDrugButton" layoutX="868.0" layoutY="66.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="100.0" text="Update Drug" />
+                                    <Button fx:id="deleteDrugButton" layoutX="868.0" layoutY="116.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="100.0" text="Delete Drug" />
+                                    <Button fx:id="exitDrugButton" layoutX="868.0" layoutY="533.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="100.0" text="Exit" />
+                                </children>
+                            </AnchorPane>
+                        </content>
+                    </Tab>
+                </tabs>
+            </TabPane>
+        </top>
+    </BorderPane>
+</AnchorPane>

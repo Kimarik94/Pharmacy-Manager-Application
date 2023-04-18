@@ -1,0 +1,16 @@
+ru\imp\platov\appUsers\User.class
+ru\imp\platov\javafx\controllersForWindows\PharmacistWindowController.class
+ru\imp\platov\javafx\controllersForWindows\UpdateDrugInfoWindow.class
+ru\imp\platov\database\DatabaseManager.class
+ru\imp\platov\javafx\controllersForWindows\UpdateUserInfoWindow.class
+ru\imp\platov\javafx\LoginWindow.class
+ru\imp\platov\Drugs\DrugDAO.class
+ru\imp\platov\database\DatabaseProperties.class
+ru\imp\platov\javafx\controllersForWindows\AdminWindowController.class
+ru\imp\platov\appUsers\Role.class
+ru\imp\platov\javafx\WindowController.class
+ru\imp\platov\javafx\controllersForWindows\AddDrugFormController.class
+ru\imp\platov\PharmacyApp.class
+ru\imp\platov\javafx\controllersForWindows\AddUserFormController.class
+ru\imp\platov\appUsers\UserDAO.class
+ru\imp\platov\Drugs\DrugItem.class

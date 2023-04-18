@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane prefHeight="400.0" prefWidth="768.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.imp.platov.javafx.controllersForWindows.PharmacistWindowController">
+    <top>
+        <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="694.0" spacing="10.0" style="-fx-padding: 10px;">
+            <Label text="Find Medicine:" />
+            <TextField fx:id="nameField" promptText="Enter Name:" />
+            <TextField fx:id="manufacturerField" promptText="Enter Manufacturer:" />
+            <TextField fx:id="descriptionField" promptText="Enter Description:" />
+            <Button fx:id="searchButton" prefHeight="25.0" prefWidth="89.0" text="Search" />
+        </HBox>
+    </top>
+    <center>
+        <TableView fx:id="tableView" editable="true" prefHeight="310.0" prefWidth="624.0">
+            <columns>
+                <TableColumn fx:id="nameColumn" prefWidth="106.0" style="-fx-alignment: CENTER;" text="Name" />
+                <TableColumn fx:id="manufacturerColumn" prefWidth="172.0" style="-fx-alignment: CENTER;" text="Manufacturer" />
+                <TableColumn fx:id="descriptionColumn" prefWidth="255.0" text="Description" />
+                <TableColumn fx:id="priceColumn" prefWidth="69.0" style="-fx-alignment: CENTER;" text="Price" />
+                <TableColumn fx:id="quantityColumn" prefWidth="70.0" style="-fx-alignment: CENTER;" text="Quantity" />
+                <TableColumn fx:id="recipeColumn" maxWidth="500.0" prefWidth="100.0" style="-fx-alignment: CENTER;" text="Recipe" />
+            </columns>
+        </TableView>
+    </center>
+    <bottom>
+      <AnchorPane>
+         <children>
+              <HBox alignment="CENTER_LEFT" spacing="10.0" style="-fx-padding: 10px;">
+                  <Label text="Enter Quantity: " />
+                  <TextField fx:id="quantityField" />
+                  <Button fx:id="sellButton" disable="true" prefHeight="25.0" prefWidth="56.0" text="Sell" />
+               <CheckBox fx:id="RecipeCheck" mnemonicParsing="false" />
+               <Label layoutX="20.0" layoutY="24.0" text="Recipe checked?" />
+              </HBox>
+            <Button fx:id="exitButton" layoutX="671.0" layoutY="10.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="85.0" text="Exit" />
+         </children>
+      </AnchorPane>
+    </bottom>
+</BorderPane>
